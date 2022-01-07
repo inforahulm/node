@@ -1,0 +1,173 @@
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="<%= process.env.admin_path %>/dashboard" class="brand-link">
+      <span class="brand-text font-weight-light">Dashboard</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+ 
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+ 
+            <ul class="nav nav-treeview">
+    
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/dashboard" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/category" class="nav-link">
+              <i class="nav-icon fa fa-list"></i>
+              <p>
+                Category
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/users" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Users
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/agents" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Agents
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/properties" class="nav-link properties-menu">
+              <i class="nav-icon fa fa-building"></i>
+              <p>
+                Properties
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/news" class="nav-link news-menu">
+              <i class="nav-icon fa fa-newspaper"></i>
+              <p>
+                News
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/newsletter" class="nav-link news-menu">
+              <i class="nav-icon fa fa-bell"></i>
+              <p>
+                NewsLetter
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Masters
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/property-type" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Property Type</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/property-indoor-features" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Indoor Features</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/property-outdoor-features" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Outdoor Features</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/property-climate-control-energy" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Climate Control and Energy</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="<%= process.env.admin_path %>/packages" class="nav-link">
+              <i class="nav-icon fa fa-file"></i>
+              <p>
+                Manage Plans
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-cog"></i>
+              <p>
+                Settings
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/version" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Version</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/terms-conditions" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Terms & Conditions</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/privacy-policy" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Privacy Policy</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<%= process.env.admin_path %>/setting" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
