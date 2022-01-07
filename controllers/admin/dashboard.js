@@ -7,6 +7,13 @@ const dashboard = (async (req,res)=>{
     });
 });
 
+const chat = (async (req,res)=>{
+    res.render('admin/chat',{  
+    });
+});
+
+
 module.exports = {
-    dashboard
+    dashboard,
+    chat
 }

@@ -1,0 +1,875 @@
+<footer class="bottom section-padding pb-4">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-xl-2 col-lg-4">
+                <div class="bottom-logo bottom-widget">
+                    <a href="/">
+                        <img src="/assets/images/logo-white.svg" class="img-fluid main-logo" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="javascript:void(0);">Search Properties</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="javascript:void(0);">List your own properties</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Information</h4>
+                    <ul>
+                        <li><a href="/terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-8">
+                <div class="contact-dtl-box">
+                    <div class="newsletter-box">
+                        <h4 class="address-title">Newsletter Subscription</h4>
+                        <form name="frmNewsletter" id="frmNewsletter" method="POST">
+                            <div class="subscribe-input-box">
+                                <input type="text" name="email" id="email" class="sub-input" placeholder="Enter your email" />
+                                <button type="submit" id="btnNewsletter" class="sub-btn">Subscribe <i class="fa fa-spinner fa-spin fa-newsleter" style="display: none;"></i></button>
+                                <label class="error-message newsletter-err"></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="social-box">
+                        <h4 class="address-title">Follow us on social media</h4>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0">
+        <div class="col-md-12 p-0">
+            <div class="footer pb-0">
+                <div class="copyright">
+                    <p><span>© Copyright 2021</span><a href="#">Hub<b>Estate</b></a><span>I All Rights Reserved</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+
+
+
+<!-- Login Modal -->
+<div class="modal fade custom-modal login-modal-box" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hub Estate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="logn-form-box">
+                    <div class="login-tabs">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#smlogin" role="tab" aria-controls="smlogin" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#aglogin" role="tab" aria-controls="aglogin" aria-selected="false">Agent Login</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="smlogin" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="login-data-box">
+                                    <h5>Welcome to Hub Estate</h5>
+                                    <form name="frmUserLogin" id="frmUserLogin" method="POST">
+                                        <input type="hidden" name="type" value="1">
+                                        <input type="hidden" name="auth_type" value="1">
+                                        <input type="hidden" name="device_type" value="PC">
+                                        <input type="hidden" name="device_token" value="">
+                                        <input type="hidden" name="social_id" value="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Email</label>
+                                                    <input type="text" name="email" class="form-control" placeholder="Enter email address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Password</label>
+                                                    <div class="right-input-icon">
+                                                        <input type="password" name="password" class="form-control input-password" placeholder="Enter Password">
+                                                        <a href="javascript:;" class="password-show-icon right-icon"><i class="material-icons-outlined">visibility</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="forgotlink">
+                                                    <a href="javascript:void(0);" class="forgotmodallink" >Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnUserLogin" class="loginsubmit btn-block">Login <i class="fa fa-spinner fa-spin fa-userlogin" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="or-text">
+                                                    <p>Or</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-lg-options">
+                                                    <a href="/auth/facebook" class="fb-login other-auth-btn"><img src="/assets/images/fb.svg" alt=""><span>Continue with facebook</span></a>
+                                                    <a href="/auth/google" class="google-login other-auth-btn"><img src="/assets/images/google.svg" alt=""><span>Continue with Google</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>New to Hub Estate?<a href="javascript:void(0);" class="singupmodallink">Sign up here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="aglogin" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="login-data-box">
+                                    <h5>Welcome to Hub Estate</h5>
+                                    <form name="frmAgentLogin" id="frmAgentLogin" method="POST">
+                                        <input type="hidden" name="type" value="2">
+                                        <input type="hidden" name="auth_type" value="1">
+                                        <input type="hidden" name="device_type" value="PC">
+                                        <input type="hidden" name="device_token" value="">
+                                        <input type="hidden" name="social_id" value="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Email</label>
+                                                    <input type="text" name="email" class="form-control" placeholder="Enter email address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Password</label>
+                                                    <div class="right-input-icon">
+                                                        <input type="password" name="password" class="form-control input-password" placeholder="Enter Password">
+                                                        <a href="javascript:;" class="password-show-icon right-icon"><i class="material-icons-outlined">visibility</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="forgotlink">
+                                                    <a href="javascript:void(0);" class="forgotmodallink">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnAgentLogin" class="loginsubmit btn-block">Login <i class="fa fa-spinner fa-spin fa-agentlogin" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="or-text">
+                                                    <p>Or</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-lg-options">
+                                                    <a href="javascript:void(0);" class="fb-login other-auth-btn"><img src="/assets/images/fb.svg" alt=""><span>Continue with facebook</span></a>
+                                                    <a href="javascript:void(0);" class="google-login other-auth-btn"><img src="/assets/images/google.svg" alt=""><span>Continue with Google</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>New to Hub Estate?<a href="javascript:void(0);" class="singupmodallink">Sign up here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sign up modal -->
+<div class="modal fade custom-modal login-modal-box" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hub Estate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="logn-form-box">
+                    <div class="login-tabs">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#smsignup" role="tab" aria-controls="smsignup" aria-selected="true">Sign up</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#agsignup" role="tab" aria-controls="agsignup" aria-selected="false">Agent Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="smsignup" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="login-data-box">
+                                    <h5>Get Registered</h5>
+                                    <form name="frmUserRegi" id="frmUserRegi" method="POST">
+                                        <input type="hidden" name="type" value="1">
+                                        <input type="hidden" name="auth_type" value="1">
+                                        <input type="hidden" name="device_type" value="PC">
+                                        <input type="hidden" name="device_token" value="">
+                                        <input type="hidden" name="social_id" value="">
+                                        <input type="hidden" name="version" value="">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Full name</label>
+                                                    <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Email</label>
+                                                    <input type="text" name="email" class="form-control" placeholder="Enter email address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Phone</label>
+                                                    <input type="text" name="phone_number" class="form-control" placeholder="Enter phone number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Password</label>
+                                                    <div class="right-input-icon">
+                                                        <input type="password" name="password" class="form-control input-password" placeholder="Enter Password">
+                                                        <a href="javascript:;" class="password-show-icon right-icon"><i class="material-icons-outlined">visibility</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="tersmcheck">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="accept_terms_user">
+                                                        <label class="custom-control-label" for="accept_terms_user">I agree to all<a href="/terms-conditions" target="_blank">Terms & Conditions</a></label>
+                                                    </div>
+                                                    <span class="frmRegiUserErr error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnUserRegi" class="loginsubmit btn-block">Sign Up <i class="fa fa-spinner fa-spin fa-userregi" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="or-text">
+                                                    <p>Or</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-lg-options">
+                                                    <a href="javascript:void(0);" class="fb-login other-auth-btn"><img src="/assets/images/fb.svg" alt=""><span>Sign up with facebook</span></a>
+                                                    <a href="javascript:void(0);" class="google-login other-auth-btn"><img src="/assets/images/google.svg" alt=""><span>Sign up with Google</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>Already have an account?<a href="javascript:void(0);" class="loginmodalink">Login here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="agsignup" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="login-data-box">
+                                    <h5>Get Registered</h5>
+                                    <form name="frmAgentRegi" id="frmAgentRegi" method="POST">
+                                        <input type="hidden" name="type" value="2">
+                                        <input type="hidden" name="auth_type" value="1">
+                                        <input type="hidden" name="device_type" value="PC">
+                                        <input type="hidden" name="device_token" value="">
+                                        <input type="hidden" name="social_id" value="">
+                                        <input type="hidden" name="version" value="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Full name</label>
+                                                    <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Email</label>
+                                                    <input type="text" name="email" class="form-control" placeholder="Enter email address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Phone</label>
+                                                    <input type="text" name="phone_number" class="form-control" placeholder="Enter phone number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Password</label>
+                                                    <div class="right-input-icon">
+                                                        <input type="password" name="password" class="form-control input-password" placeholder="Enter Password">
+                                                        <a href="javascript:;" class="password-show-icon right-icon"><i class="material-icons-outlined">visibility</i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="tersmcheck">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="accept_terms_agent">
+                                                        <label class="custom-control-label" for="accept_terms_agent">I agree to all<a href="javascript:void(0);">Terms & Conditions</a></label>
+                                                    </div>
+                                                    <span class="frmRegiAgentErr error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnAgentRegi" class="loginsubmit btn-block">Sign Up <i class="fa fa-spinner fa-spin fa-agentregi" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="or-text">
+                                                    <p>Or</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-lg-options">
+                                                    <a href="javascript:void(0);" class="fb-login other-auth-btn"><img src="/assets/images/fb.svg" alt=""><span>Sign up with facebook</span></a>
+                                                    <a href="javascript:void(0);" class="google-login other-auth-btn"><img src="/assets/images/google.svg" alt=""><span>Sign up with Google</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>Already have an account?<a href="javascript:void(0);" class="loginmodalink">Login here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Forgot Password  Modal -->
+<div class="modal fade custom-modal login-modal-box" id="forgotmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hub Estate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="logn-form-box">
+                    <div class="login-tabs">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#smforgot" role="tab" aria-controls="smforgot" aria-selected="true">Forgot Password</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#agforgot" role="tab" aria-controls="agforgot" aria-selected="false">Agent Forgot Password</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="smforgot" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="login-data-box">
+                                    <h5>Forgot Password</h5>
+                                    <form name="frmUserLogin" id="frmUserForgot" method="POST">
+                                        <input type="hidden" name="type" value="1">
+                                        <div class="row">
+                                            <div class="col-md-12 textuserphonenumber">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Mobile Number</label>
+                                                    <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Enter mobile number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 otptextusers d-none" >
+                                                <div class="form-group ">
+                                                    <label >OTP</label>
+                                                    <div class="form-group-input otp-form-group mb-3">
+                                                        <input type="text" name="otpuser1" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                        <input type="text" name="otpuser2" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                        <input type="text" name="otpuser3" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                        <input type="text" name="otpuser4" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                        <input type="text" name="otpuser5" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                        <input type="text" name="otpuser6" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbaruser">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 otptextusers d-none">
+                                                <div class="forgotlink">
+                                                    <a href="javascript:void(0);" id="btnresendOTPuserForgot" >Resend OTP</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 d-none newpassworduser">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">New Password</label>
+                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter New Password" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnUserfogot" class="loginsubmit btn-block">Reset Password <i class="fa fa-spinner fa-spin fa-userforgot" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>If you remember password<a href="javascript:void(0);" class="loginmodalink">Login here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="agforgot" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="login-data-box">
+                                    <h5>Forgot Password</h5>
+                                    <form name="frmAgentLogin" id="frmAgentFotgot" method="POST">
+                                        <input type="hidden" name="type" value="2">
+                                        <div class="row">
+
+                                            <div class="col-md-12 textagphonenumber">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">Mobile Number</label>
+                                                    <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Enter mobile number" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 otptextag d-none" >
+                                                <div class="form-group ">
+                                                    <label >OTP</label>
+                                                    <div class="form-group-input otp-form-group mb-3">
+                                                        <input type="text" name="otpuser1" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                        <input type="text" name="otpuser2" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                        <input type="text" name="otpuser3" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                        <input type="text" name="otpuser4" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                        <input type="text" name="otpuser5" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                        <input type="text" name="otpuser6" minlength="1" maxlength="1" class="form-control otp-inputbar otp-inputbarag">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 otptextag d-none">
+                                                <div class="forgotlink">
+                                                    <a href="javascript:void(0);" id="btnresendOTPagForgot" >Resend OTP</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 d-none newpasswordag">
+                                                <div class="form-group floating-group">
+                                                    <label class="labelfloat">New Password</label>
+                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter New Password" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="mt-3 d-block">
+                                                    <button type="submit" id="btnAgentfogot" class="loginsubmit btn-block">Reset Password <i class="fa fa-spinner fa-spin fa-agforgot" style="display: none;"></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="other-login-links">
+                                                    <p>If you remember password<a href="javascript:void(0);" class="loginmodalink">Login here</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Filter Modal -->
+<div class="modal fade custom-modal filter-modal-box" id="filtermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="filters-boxes">
+                    <div class="filter-box">
+                        <h5 class="filter-head">Rooms, Beds and Car Spaces</h5>
+                        <div class="bd-filter">
+                            <p>Bedrooms</p>
+                            <div class="qty-container">
+                                <button class="qty-btn-minus qty-btn" type="button"><i class="fa fa-minus"></i></button>
+                                <input type="text" name="qty" value="1" class="input-qty"/>
+                                <button class="qty-btn-plus qty-btn" type="button"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="bd-filter">
+                            <p>Bathrooms</p>
+                            <div class="qty-container">
+                                <button class="qty-btn-minus qty-btn" type="button"><i class="fa fa-minus"></i></button>
+                                <input type="text" name="qty" value="1" class="input-qty"/>
+                                <button class="qty-btn-plus qty-btn" type="button"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="bd-filter">
+                            <p>Car Spaces</p>
+                            <div class="qty-container">
+                                <button class="qty-btn-minus qty-btn" type="button"><i class="fa fa-minus"></i></button>
+                                <input type="text" name="qty" value="1" class="input-qty"/>
+                                <button class="qty-btn-plus qty-btn" type="button"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <h5 class="filter-head">New or Established Property</h5>
+                        <div class="radiocheck-group-box">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filtercheck1" checked>
+                                <label class="custom-control-label" for="filtercheck1">New</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="filtercheck2" checked>
+                                <label class="custom-control-label" for="filtercheck2">Established</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <h5 class="filter-head">Land Size (m²)</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group floating-group mb-sm-0">
+                                    <label class="labelfloat">Minimum Land Size</label>
+                                    <input type="text" class="form-control" placeholder="Enter Minimum Land Size" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group floating-group mb-sm-0">
+                                    <label class="labelfloat">Maximum Land Size</label>
+                                    <input type="text" class="form-control" placeholder="Enter Maximum Land Size" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box">
+                        <h5 class="filter-head">Property Price</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group floating-group mb-sm-0">
+                                    <label class="labelfloat">Minimum Price</label>
+                                    <input type="text" class="form-control" placeholder="Enter Minimum Price" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group floating-group mb-sm-0">
+                                    <label class="labelfloat">Maximum Price</label>
+                                    <input type="text" class="form-control" placeholder="Enter Maximum Price" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer-data">
+                    <button class="simple-btn">Reset</button>
+                    <button class="default-btn ml-3">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit Profile Modal -->
+<div class="modal fade custom-modal profile-modal-box" id="editprofilemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="javascript:void(0);" method="GET">
+                    <div class="profile-edit-box">
+                        <div class="profile-img-change-box">
+                            <div class="profile-img">
+                                <img src="/assets/images/users/user-3.jpg" alt="" />
+                                <button class="profile-remove-btn"><i class="feather icon-x"></i></button>
+                            </div>
+                            <div class="profile-change-btn">
+                                <input type="file" class="changeinput" />
+                                <span>Change Picture</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group floating-group">
+                                    <label class="labelfloat">Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" value="Peter Mckinnon" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="default-btn btn-block">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Change Password Modal -->
+<div class="modal fade custom-modal profile-modal-box" id="changepasswordmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="javascript:void(0);" method="GET">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group floating-group">
+                                <label class="labelfloat">Current Password</label>
+                                <input type="password" class="form-control" placeholder="Enter Current Password" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group floating-group">
+                                <label class="labelfloat">New Password</label>
+                                <div class="right-input-icon">
+                                    <input type="password" class="form-control input-password" placeholder="Enter New Password">
+                                    <a href="javascript:;" class="password-show-icon right-icon"><i class="material-icons-outlined">visibility</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="default-btn btn-block">Change Password</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Location Modal -->
+<div class="modal fade custom-modal filter-modal-box" id="locationmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Select Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <form action="javascript:void(0);" method="GET">
+                    <div class="search-map-group">
+                        <input type="text" class="form-control" placeholder="Search location">
+                        <i class="material-icons-outlined search-icon">search</i>
+                    </div>
+                    <div class="map-area-box">
+                        <div id="location-map" class="ga-map-left map-part"></div>
+                        <div class="map-select-box">
+                            <button class="locate-btn"><i class="material-icons-outlined">my_location</i></button>
+                            <button class="default-btn map-select-btn btn-block">Select</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Submit Request Modal -->
+<div class="modal fade custom-modal profile-modal-box" id="submitrequestmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Submit Request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body pt-0">
+                <form action="javascript:void(0);" method="GET">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="filters-boxes">
+                                <div class="filter-box">
+                                    <h5 class="filter-head">I need</h5>
+                                    <div class="request-boxes">
+                                        <div class="rqst-box">
+                                            <input type="checkbox" id="subrq1" class="rqst-input" />
+                                            <label for="subrq1" class="rqst-label">
+                                                <i class="material-icons-outlined">videocam</i>
+                                                <span>Videographer</span>
+                                                <span class="checkdesign"></span>
+                                            </label>
+                                        </div>
+                                        <div class="rqst-box">
+                                            <input type="checkbox" id="subrq2" class="rqst-input" />
+                                            <label for="subrq2" class="rqst-label">
+                                                <i class="material-icons-outlined">photo_camera</i>
+                                                <span>Photographer</span>
+                                                <span class="checkdesign"></span>
+                                            </label>
+                                        </div>
+                                        <div class="rqst-box">
+                                            <input type="checkbox" id="subrq3" class="rqst-input" />
+                                            <label for="subrq3" class="rqst-label">
+                                                <img src="/assets/images/floor_plan.svg" alt="">
+                                                <span>Floor Plan</span>
+                                                <span class="checkdesign"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="default-btn btn-block mt-3">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Submit Request Modal -->
+<div class="modal fade custom-modal profile-modal-box" id="submitrequesttextmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Submit Request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="feather icon-x"></i></span>
+                </button>
+            </div>
+            <div class="modal-body pt-0">
+                <form action="javascript:void(0);" method="GET">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="subqrest-box text-center">
+                                <p>Once you click "Submit", our Videographers will be in touch with you soon.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="default-btn btn-block mt-4">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .error{
+        color: #fb3131;
+    }
+</style>
+<script>
+    var MAIN_URL = "<%= process.env.MAIN_URL %>";
+    var MAIN_URL_API = "<%= process.env.MAIN_URL_API %>";
+    var CURRENCY = "<%= process.env.CURRENCY %>";
+</script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/select2.full.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.mCustomScrollbar.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.MAP_KEY %>&libraries=places&callback=initMap" defer></script>
+
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/jquery.validate.js"></script>
+<script src="/assets/js/bootstrap-notify.min.js"></script>
+<script src="/assets/js/pages/main.js"></script>
+<script src="/assets/js/pages/logins.js"></script>
+<script src="/admin/plugins/toastr/toastr.min.js"></script>
+<script>
+    
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "progressBar": true,
+    "positionClass": "toast-top-right",
+    "onclick": null,
+    "showDuration": "100",
+    "hideDuration": "500",
+    "timeOut": "3000",
+    "extendedTimeOut": "500",
+    "showEasing": "linear",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "preventDuplicates": true,
+    "hideMethod": "fadeOut",
+  };
+</script>
+
+
+</body>
+</html>

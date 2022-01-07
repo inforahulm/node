@@ -19,10 +19,9 @@ router.prefix('/admin', (route) => {
     }));
 
     route.get('/dashboard',  AdminAuthUser ,AdminDashboardController.dashboard);
+    route.get('/chat',  AdminAuthUser ,AdminDashboardController.chat);
     route.get('/admin-logout', AdminLoginController.logout);
-    // route.get('/', (req, res) => {
-    // res.sendFile(__dirname + '/index.html');
-// }) 
+
 });
 
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Home</title>
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/admin/plugins/toastr/toastr.min.css">
+    </head>
+
+    <body>
+        <div id="preloader">
+            <div class="sk-three-bounce">
+                <div class="sk-child sk-bounce1"></div>
+                <div class="sk-child sk-bounce2"></div>
+                <div class="sk-child sk-bounce3"></div>
+            </div>
+        </div>
+        <div class="common-container">
+            <div id="main-wrapper">
+                <header class="header-wrapper">
+                    <div class="container home-container">
+                        <div class="header-part">
+                            <div class="logo-part">
+                                <a href="/">
+                                    <img src="/assets/images/logo-white.svg" class="img-fluid main-logo" alt="">
+                                </a>
+                            </div>
+                            <div class="menu-part">
+                                <a href="javascript:;" class="close-menu d-block d-xl-none">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                                <nav class="nav-bar">
+                                    <ul class="d-xl-flex">
+                                        <li class="home-page active"><a href="/">Home</a></li>
+                                        <li class="property-buy-page"><a href="/properties/buy">Buy</a></li>
+                                        <li class="property-rent-page"><a href="/properties/rent">Rent</a></li>
+                                        <li class="property-share-page"><a href="/properties/share">Share</a></li>
+                                        <li class="news-page"><a href="/news">News</a></li>
+                                        <li class="chats-page"><a href="/chats">Chats</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="account-right">
+                                <ul class="d-flex align-items-center">
+                                    <li class="without-login">
+                                        <div class="signin-btn login-buttons">
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#loginmodal" class="login-btn"><i class="material-icons-outlined">account_circle</i><span>Login</span></a>
+                                            <a href="javascript:void(0);" class="list-pro-btn"><i class="material-icons-outlined">ballot</i><span>List your property</span></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown profile_log with-login">
+                                        <a href="javascript:void(0);" class="menu-link-drop" data-display="static" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="user-profile-data">
+                                                <div class="user-img">
+                                                    <img src="/images/user-img.png" class="profile-pic" alt="">
+                                                </div>
+                                                <div class="user-name">
+                                                    <p class="set-user-name"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-links">
+                                                <ul>
+                                                    <li><a href="/profile"><i class="material-icons-outlined">account_circle</i><span>Profile</span></a></li>
+                                                    <li><a href="/my-properties"><i class="material-icons-outlined">maps_home_work</i><span>My Properties</span></a></li>
+                                                    <li><a href="/property-plans"><i class="material-icons-outlined">paid</i><span>Subscription</span></a></li>
+                                                    <li class="logout-click"><a href="javascript:void(0);"><i class="material-icons-outlined">logout</i><span>Logout</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="toggle-btn d-xl-none">
+                                <a href="javascript:;"><i></i><i></i><i></i></a>
+                            </div>
+                            <div class="menu-overlay-bg"></div>
+                        </div>
+                    </div>
+                </header>

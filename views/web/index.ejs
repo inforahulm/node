@@ -1,0 +1,268 @@
+<%- include('include/header'); %>
+                <section class="section-padding hero-section page-pt-sec">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <img src="assets/images/header_image.png" alt=""  class="header-side-image">
+                            <div class="col-xl-7 hero-height">
+                                <div class="hero-box">
+                                    <h1>Find your Best <br>Real Estate</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor lorem ipsum de sit emit.</p>
+                                </div>
+                                <div class="hero-tabs mt-4">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item buy-tab-click" role="presentation">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Buy</a>
+                                        </li>
+                                        <li class="nav-item rent-tab-click" role="presentation">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Rent</a>
+                                        </li>
+                                        <li class="nav-item share-tab-click" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Share</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <form action="javascript:void(0);" method="GET">
+                                                <input type="hidden" name="property_is_for" id="property_is_for" value="1">
+                                                <input type="hidden" name="lattitude" id="lattitude" value="">
+                                                <input type="hidden" name="longitude" id="longitude" value="">
+                                                <input type="hidden" name="location" id="location" value="">
+
+                                                <div class="search-form-box">
+                                                    <div class="property-type">
+                                                        <div class="form-group form-icon-group select-group-data select2Part mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">maps_home_work</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <select name="property_type_id" id="property_type_id" class=" form-control customSelect">
+                                                                    <option value="">Property Type</option>
+                                                                  
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="location-type">
+                                                        <div class="form-group form-icon-group mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">place</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <input type="text" class="form-control" id="searchTextField"  placeholder="Search by location" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="submit-search">
+                                                        <button type="button" class="search-submit-btn">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <button class="adv-search-btn"><i class="material-icons-outlined">search</i><span>Advanced Search</span></button>
+                                        </div>
+                                        <!-- <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            <form action="javascript:void(0);" method="GET">
+                                                <div class="search-form-box">
+                                                    <div class="property-type">
+                                                        <div class="form-group form-icon-group select-group-data select2Part mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">maps_home_work</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <select name="" id="" class=" form-control customSelect">
+                                                                    <option value="">Property Type</option>
+                                                                    <option value="">Property One</option>
+                                                                    <option value="">Property Two</option>
+                                                                    <option value="">Property Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="location-type">
+                                                        <div class="form-group form-icon-group mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">place</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <input type="text" class="form-control"  placeholder="Search by location" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="submit-search">
+                                                        <button type="submit" class="search-submit-btn">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <button class="adv-search-btn"><i class="material-icons-outlined">search</i><span>Advanced Search</span></button>
+                                        </div>
+                                        <div class="tab-pane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                            <form action="javascript:void(0);" method="GET">
+                                                <div class="search-form-box">
+                                                    <div class="property-type">
+                                                        <div class="form-group form-icon-group select-group-data select2Part mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">maps_home_work</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <select name="" id="" class=" form-control customSelect">
+                                                                    <option value="">Property Type</option>
+                                                                    <option value="">Property One</option>
+                                                                    <option value="">Property Two</option>
+                                                                    <option value="">Property Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="location-type">
+                                                        <div class="form-group form-icon-group mb-0">
+                                                            <div class="form-icon">
+                                                                <i class="material-icons-outlined">place</i>
+                                                            </div>
+                                                            <div class="form-input-data">
+                                                                <input type="text" class="form-control"  placeholder="Search by location" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="submit-search">
+                                                        <button type="submit" class="search-submit-btn">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <button class="adv-search-btn"><i class="material-icons-outlined">search</i><span>Advanced Search</span></button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-padding bg-grey">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title text-center">
+                                    <h2>What is<br><strong>Hub Estate?</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="service-box">
+                                    <i class="material-icons-outlined green">roofing</i>
+                                    <h4>For Buyers</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor lorem ipsum de sit emit.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-box">
+                                    <i class="material-icons-outlined orange">people</i>
+                                    <h4>For Rent and Sharing</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor lorem ipsum de sit emit.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-box">
+                                    <i class="material-icons-outlined blue">local_atm</i>
+                                    <h4>For Sellers</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor lorem ipsum de sit emit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title text-center">
+                                    <h2>Latest<br><strong>Property News</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+            
+                            <div class="col-md-6">
+                                <div class="news-box">
+                                    <div class="news-img">
+                                     
+                                    </div>
+                                    <div class="news-inner-box">
+                                        <div class="news-text">
+                                            
+                                        </div>
+                                        <!-- <div class="news-user">
+                                            <a href="javascript:void(0);">
+                                                <div class="user-ns-img">
+                                                    <img src="assets/images/users/user-2.jpg" alt="">
+                                                    <span>by Alexander</span>
+                                                </div>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </section>
+                <section class="section-padding download-section bg-orange">
+                    <img src="assets/images/ss_bg.png" alt="" class="download-mobile" />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="section-title download-box">
+                                    <h2 class="text-white">Download our App on<br><strong>iOS and Android</strong></h2>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor lorem ipsum de sit emit.</p>
+                                    <div class="download-buttons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <%- include('include/footer'); %>
+                <script>
+                    function initMap() {
+                        var input = document.getElementById('searchTextField');
+                        var autocomplete = new google.maps.places.Autocomplete(input);
+                        autocomplete.addListener('place_changed', function() {
+                            var place = autocomplete.getPlace();
+                            var lat = place.geometry.location.lat(),
+                            lng = place.geometry.location.lng();
+                            $("#lattitude").val(lat);
+                            $("#longitude").val(lng);
+                            $("#location").val(place.formatted_address);
+                            
+                        });
+                    }
+                $(".buy-tab-click").on("click", function () {
+                    $("#property_is_for").val("1");
+                });
+                $(".rent-tab-click").on("click", function () {
+                    $("#property_is_for").val("2");
+                });
+                $(".share-tab-click").on("click", function () {
+                    $("#property_is_for").val("3");
+                });
+                $(".search-submit-btn").on("click",function(){
+                    var property_type_id = $("#property_type_id").val();
+                    var property_is_for = $("#property_is_for").val();
+                    var lattitude = $("#lattitude").val();
+                    var longitude = $("#longitude").val();
+                    var location = $("#location").val();
+                    if(property_is_for==1){
+                        var type = 'buy';
+                    }else if(property_is_for==2){
+                        var type = 'rent';
+                    }else{
+                        var type = 'share';
+                    }
+                    if(property_type_id=='' && location==''){
+                        var search_url = type;
+                    }else{
+                        var search_url = type+'-'+property_type_id+'-'+location+'-'+lattitude+'-'+longitude;
+                    }
+                    var url = '/properties/'+search_url;
+                    window.location.href = url;
+                });
+        </script>
